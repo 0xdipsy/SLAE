@@ -1,7 +1,7 @@
 # SecurityTube Linux Assembly Expert Certification (SLAEx86) 
 The following repository contains the SecurityTube Linux Assembly Expert assignments that are required to gain the certification. 
 ## Table of Contents
-- ASSIGNMENTS
+- Assignments: 
 	- SLAE#1 Shell Bind TCP
 
 	- SLAE#2 Shell Reverse TCP
