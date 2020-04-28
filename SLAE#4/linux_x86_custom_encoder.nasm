@@ -1,3 +1,7 @@
+;SLAE - Assignment #3: Custom Encoder (Linux/x86)
+;Author:  Dipsy 
+;Student ID: SLAE-1535
+
 global _start			
 
 section .text
