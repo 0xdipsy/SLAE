@@ -1,8 +1,9 @@
-#!/usr/bin/python
- 
 # encoder.py
 # Author: dipsy 
 # Student Id: SLAE-1535
+
+
+#!/usr/bin/python
  
 simpleNot = []
 simpleAdd = []
