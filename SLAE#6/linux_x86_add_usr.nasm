@@ -64,11 +64,11 @@ _start:
 	or dl,0x14
 	or al,0x4          ; write syscall 
 	int 0x80
-
+	
+	sub eax, eax 
 	or al,0x6          ; close syscall 
-
 	int 0x80
+	
 	sub eax,eax
-
 	or al,0x1          ; exit syscall 
 	int 0x80
