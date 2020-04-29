@@ -34,7 +34,7 @@ print('Simple Add Encoder')
 
 for c in simpleAdd:
         for x in bytearray(c) :
-                y = x + 0xb0b0 
+                y = x + 0xb0b0 #change this to the corresponding value you wish to add 
   
                 original += '%02x' % x
                 encoded += '%02x' % (y & 0xff)
