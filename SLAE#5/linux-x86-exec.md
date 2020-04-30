@@ -42,7 +42,11 @@ CMD                    yes       The command string to execute
 Description:
   Execute an arbitrary command
 [...]
+```
 The shell-code executes an arbitrary command, so I set CMD option with /bin/ls. 
+Note that the shell-code contains zeros, you can exclude them by specifying \x00 as a bad character with -b '\x00'
+
+```
 dipsy@kali:~$ msfvenom -p linux/x86/exec CMD=/bin/ls -f c                                                                                                                                           
 [-] No platform was selected, choosing Msf::Module::Platform::Linux from the payload                                                                                                                              
 [-] No arch selected, selecting arch: x86 from the payload                                                                                                                                                        
