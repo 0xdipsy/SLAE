@@ -21,8 +21,7 @@ int main(int argc, char* argv[]){
         if (port < 0 || port > 65535)
             printf("Port number should be between 0-65535");
         else {
-            for (size_t i = 0; i < sizeof(code)-1; i++)
-            {
+            for (size_t i = 0; i < sizeof(code)-1; i++) {
 
                 if (code[i] == 0x90) {
                     
